@@ -1,12 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>我的个人网站</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阮小楠的个人博客 | 分享技术与生活</title>
+    <meta name="description" content="阮小楠的个人博客，分享编程学习笔记、技术教程和生活感悟。">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        nav {
+            background: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #764ba2;
+        }
+        .main-content {
+            background: white;
+            margin: 30px 0;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .main-content h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        .main-content h3 {
+            margin: 20px 0 10px 0;
+            color: #555;
+        }
+        .main-content p {
+            margin-bottom: 15px;
+        }
+        .post-list {
+            list-style: none;
+        }
+        .post-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .post-list li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+        .post-list li a:hover {
+            color: #667eea;
+        }
+        .post-date {
+            color: #999;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #999;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #764ba2;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8em; }
+            .main-content { padding: 20px; }
+            nav a { margin: 0 10px; font-size: 0.9em; }
+        }
+    </style>
 </head>
 <body>
-    <h1>你好，我是 ruan-xiaonan</h1>
-    <p>这是我的第一个GitHub Pages网站</p>
-    <p>正在准备申请Google AdSense</p>
+    <nav>
+        <div class="container" style="text-align: center;">
+            <a href="/">首页</a>
+            <a href="/about.html">关于</a>
+            <a href="/privacy.html">隐私政策</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>阮小楠的博客</h1>
+        <p>分享编程学习 · 记录技术成长</p>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>📝 最新文章</h2>
+            <ul class="post-list">
+                <li>
+                    <a href="#">GitHub 入门教程：从零开始搭建个人网站</a>
+                    <div class="post-date">2024年1月15日</div>
+                </li>
+                <li>
+                    <a href="#">Google AdSense 申请全攻略（新手必看）</a>
+                    <div class="post-date">2024年1月12日</div>
+                </li>
+                <li>
+                    <a href="#">前端开发学习路线图：2024年最新版</a>
+                    <div class="post-date">2024年1月10日</div>
+                </li>
+                <li>
+                    <a href="#">如何写出高质量的技术博客文章？</a>
+                    <div class="post-date">2024年1月8日</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2>👋 关于我</h2>
+            <p>你好！我是阮小楠，一名热爱编程和分享的技术爱好者。</p>
+            <p>这个博客主要分享：</p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>编程学习笔记和实战经验</li>
+                <li>GitHub 使用技巧</li>
+                <li>网站搭建和运营心得</li>
+                <li>Google AdSense 申请和优化经验</li>
+            </ul>
+            <p>希望通过这个博客，能帮助更多想学习编程和建立自己网站的朋友。</p>
+            <a href="/about.html" class="btn">了解更多 →</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 阮小楠的博客 | 保留所有权利</p>
+        <p>本站使用 GitHub Pages 搭建</p>
+    </footer>
 </body>
 </html>
